@@ -21,14 +21,14 @@ public class AddProductServlet extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 
         response.setContentType("text/html; charset = utf-8");
-        try{
+        try {
             String productName = request.getParameter("product_name");
             BigDecimal productPrice = new BigDecimal(request.getParameter("product_price"));
             Long manufacturerId = Long.parseLong(request.getParameter("manufacturerid"));
             productDAO.create(productName, productPrice, manufacturerId);
-            response.getWriter().print("Товар добавлен.");
-        }catch (Exception e){
-            response.getWriter().print(e);
+            response.getWriter().print("Product added");
+        } catch (Exception e) {
+            response.getWriter().print("Error adding product");
         }
 
     }

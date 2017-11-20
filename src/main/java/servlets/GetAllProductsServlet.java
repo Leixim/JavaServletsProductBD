@@ -21,24 +21,24 @@ public class GetAllProductsServlet extends HttpServlet {
                 "<html>\n" +
                 "<body>\n" +
                 "\n" +
-                "<h2>List of products</h2>"+
+                "<h2>List of products</h2>" +
                 "<table border=\"1|0\">\n" +
                 "  <tr>\n" +
                 "    <th>Product ID</th>\n" +
                 "    <th>Product Name</th> \n" +
                 "    <th>Product Price</th> \n" +
                 "  </tr>\n");
-        for (Product product:productList) {
+        for (Product product : productList) {
             response.getWriter().println("<tr>\n" +
-                    "    <th>"+ product.getId()+ "</th>\n" +
-                    "    <th>"+ product.getProductName()+"</th> \n" +
-                    "    <th>"+ product.getPrice()+ "</th>\n" +
+                    "    <th>" + product.getId() + "</th>\n" +
+                    "    <th>" + product.getProductName() + "</th> \n" +
+                    "    <th>" + product.getPrice() + "</th>\n" +
                     "  </tr>\n");
         }
         response.getWriter().println(
                 "</table>\n" +
-                "\n" +
-                "</body>\n" +
-                "</html>");
+                        "\n" +
+                        "</body>\n" +
+                        "</html>");
     }
 }

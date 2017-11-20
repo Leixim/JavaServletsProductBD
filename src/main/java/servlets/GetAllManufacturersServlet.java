@@ -21,22 +21,22 @@ public class GetAllManufacturersServlet extends HttpServlet {
                 "<html>\n" +
                 "<body>\n" +
                 "\n" +
-                "<h2>List of manufacturers</h2>"+
+                "<h2>List of manufacturers</h2>" +
                 "<table border=\"1|0\">\n" +
                 "  <tr>\n" +
                 "    <th>Manufacturer ID</th>\n" +
                 "    <th>Manufacturer Name</th> \n" +
                 "  </tr>\n");
-        for (Manufacturer manufacturer: manufacturerList) {
+        for (Manufacturer manufacturer : manufacturerList) {
             response.getWriter().println("<tr>\n" +
-                    "    <th>"+ manufacturer.getId()+ "</th>\n" +
-                    "    <th>"+ manufacturer.getManufacturerName()+"</th> \n" +
+                    "    <th>" + manufacturer.getId() + "</th>\n" +
+                    "    <th>" + manufacturer.getManufacturerName() + "</th> \n" +
                     "  </tr>\n");
         }
         response.getWriter().println(
                 "</table>\n" +
-                "\n" +
-                "</body>\n" +
-                "</html>");
+                        "\n" +
+                        "</body>\n" +
+                        "</html>");
     }
 }

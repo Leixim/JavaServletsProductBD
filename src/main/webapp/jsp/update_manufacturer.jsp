@@ -1,31 +1,17 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Dmytro
-  Date: 05.11.2017
-  Time: 15:22
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Изменить производителя.</title>
+    <title>Update manufacturer</title>
 </head>
 <body>
-<h1>ID производителя.</h1>
-
+<h1>Manufacturer ID</h1>
 <form action="/update-manufacturer" method="post" accept-charset="UTF-8">
-    <p>Введите текущий ID Производителя</p>
+    <p>Type ID</p>
     <input type="text" name="manufacturerId">
-
-    <p>Новое наименование Производителя:</p>
+    <p>New manufacturer name</p>
     <input type="text" name="manufacturerName">
-
-    <input type="submit" value="Подтвердить">
-
+    <input type="submit" value="Submit">
 </form>
-
-
-
 </body>
 </html>

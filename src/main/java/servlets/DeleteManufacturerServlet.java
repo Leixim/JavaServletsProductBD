@@ -20,12 +20,12 @@ public class DeleteManufacturerServlet extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html; charset = utf-8");
 
-        try{
+        try {
             Long manufacturerId = Long.parseLong(request.getParameter("manufacturerId"));
             ManufacturerDAO manufacturerDAO = new ManufacturerDAO();
             manufacturerDAO.delete(manufacturerId);
             response.getWriter().print("Manufacturer deleted");
-        }catch (Exception e){
+        } catch (Exception e) {
             response.getWriter().print("Error deleting manufacturer");
         }
     }

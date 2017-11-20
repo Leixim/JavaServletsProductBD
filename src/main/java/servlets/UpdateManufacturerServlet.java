@@ -18,14 +18,14 @@ public class UpdateManufacturerServlet extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html; charset = utf-8");
 
-        try{
+        try {
             Long manufacturerId = Long.parseLong(request.getParameter("manufacturerId"));
             String manufacturerName = request.getParameter("manufacturerName");
             ManufacturerDAO manufacturerDAO = new ManufacturerDAO();
             manufacturerDAO.update(manufacturerName, manufacturerId);
-            response.getWriter().print("Производитель изменен");
-        }catch (Exception e){
-            response.getWriter().print("Ошибка");
+            response.getWriter().print("Manufacturer changed");
+        } catch (Exception e) {
+            response.getWriter().print("Error update manufacturer");
         }
     }
 }

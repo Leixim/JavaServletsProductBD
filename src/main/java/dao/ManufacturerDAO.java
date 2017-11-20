@@ -56,10 +56,4 @@ public class ManufacturerDAO {
         session.close();
         return manufacturerList;
     }
-
-    public static void main(String[] args) {
-        ManufacturerDAO manufacturerDAO = new ManufacturerDAO();
-        manufacturerDAO.getAll();
-    }
-
 }

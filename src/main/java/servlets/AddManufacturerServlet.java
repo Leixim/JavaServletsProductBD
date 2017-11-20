@@ -12,7 +12,7 @@ public class AddManufacturerServlet extends HttpServlet {
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/jsp/add_manufacturer.jsp").forward(request,response);
+        request.getRequestDispatcher("/jsp/add_manufacturer.jsp").forward(request, response);
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -22,9 +22,9 @@ public class AddManufacturerServlet extends HttpServlet {
             String manufacturerName = request.getParameter("manufacturerName");
             ManufacturerDAO manufacturerDAO = new ManufacturerDAO();
             manufacturerDAO.create(manufacturerName);
-            response.getWriter().println("Производитель добавлен.");
-        }catch (Exception e){
-            response.getWriter().print("Ошибка!");
+            response.getWriter().println("Manufacturer added");
+        } catch (Exception e) {
+            response.getWriter().print("Error adding manufacturer");
         }
     }
 }

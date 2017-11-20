@@ -34,7 +34,7 @@ public class ManufacturerServlet extends HttpServlet {
                         "</html>");
     }
 
-    public Manufacturer getById(Long manufacturerId){
+    public Manufacturer getById(Long manufacturerId) {
         return this.manufacturerDAO.getById(manufacturerId);
     }
 }

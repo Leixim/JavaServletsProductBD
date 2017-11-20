@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
 </head>
 <body>
-<h2>Справочник производителей и товаров.</h2>
+<h2>Manufacturer and products</h2>
 
 <ul>
-    <li><a href="/add-manufacturer">Добавить производителя</a> </li>
+    <li><a href="/add-manufacturer">Add manufacturer</a> </li>
 </ul>
 <ul>
-    <li><a href="/update-manufacturer">Изменить наименование производителя</a></li>
+    <li><a href="/update-manufacturer">Update manufacturer name</a></li>
 </ul>
 <ul>
     <li>
-        <a href="/delete-manufacturer">Delete manufacturer by ID</a>
+        <a href="/delete-manufacturer">Delete manufacturer</a>
     </li>
 </ul>
 <ul>
-    <li><a href="/add-product">Добавить товар.</a></li>
+    <li><a href="/add-product">Add product</a></li>
 </ul>
 
 <ul>
